@@ -1,0 +1,161 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* custom style */
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary: rgb(1,45,91);
+    --lite-pink: rgb(250, 132, 138);
+    --pink: rgb(245, 78, 83);
+    --text-heading-color: rgb(25,29,52);
+    --text-pra-color: rgb(91,107,123);
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.padding {
+    padding: 9% 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero {
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image:url("../media/bg-intro-desktop.png");
+    background-size: cover;
+    background-color: rgb(247,120,120);
+
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+
+.form-section {
+    text-align: center;
+}
+.form-section input {
+    width: 100%;
+    padding: 20px 25px;
+    border-radius: 6px;
+    outline-color: rgb(97,92,124);
+    margin-bottom: 20px;
+    border: 1px solid rgb(222,222,222);
+    font-size: 16px;
+    font-weight: 600;
+}
+.form-section input::placeholder {
+    color: rgb(113,112,119);
+}
+.btn {
+    background-color: rgb(82,204,138);
+    box-shadow: inset 0px -3.5px rgb(85,171,134);
+    border: 1px solid rgb(137,210,182);
+    color: white;
+    font-weight: 600;
+
+}
+h1 {
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 5%;
+
+    
+}
+p {
+    font-size: 18px;
+    font-weight: 500;
+}
+form {
+    background-color: rgb(255, 255, 255);
+    padding: 7%;
+    border-radius: 12px;
+    box-shadow: 0px 8px 3px rgba(217, 101, 103, 0.822);
+
+}
+h4 {
+    padding: 17px;
+    background-color: rgb(93,84,163);
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 8px  rgb(217,101,102);
+}
+small {
+    color: rgb(185, 183, 195);
+    font-size: 12px;
+    font-weight: 600;
+}
+small span {
+    color: rgb(238,135,139);
+}
