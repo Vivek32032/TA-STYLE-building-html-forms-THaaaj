@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/stylesheet/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/44352a1ded.js" crossorigin="anonymous"></script>
+    <title>Journey</title>
+</head>
+
+<body>
+    <header class="primary-container flex">
+        <div class="flex">
+            <a href="#"><img src="./assets/media/img/logo.png" alt="company logo"></a>
+            <h1>JOURNEY</h1>
+        </div>
+        <nav class="flex-55">
+            <ul class="flex">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Top Destinations</a></li>
+                <li><a href="#">Recommended Places</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="primary-container">
+
+            <section class="hero flex flex-column">
+                <h2>LET'S BEGIN</h2>
+                <div class="dot-container flex flex-column">
+                    <div class="small-dot"></div>
+                    <div class="center-dot"></div>
+                    <div class="small-dot"></div>
+                </div>
+                <h4>We assist you to choose the best.</h4>
+                <a href="#main-content">  <div class="go-down flex flex-justify-center"><i class="fas fa-chevron-down"></i></div></a>
+
+                <!-- form -->
+                <form class="flex">
+
+                    <fieldset class="flex flex-column destination-fieldset">
+                        <div class="flex flex-column align-self-start">
+                            <label class="align-self-start" for="destiny">Choose Your Destination</label>
+                            <input id="destiny" type="text" name="cityname" placeholder="Type your destination....">
+                        </div>
+                        <div class="flex">
+                            <label>Check In Date<input type="date" name="indate" placeholder="Check In"> </label>
+                            <label>Check Out Date<input type="date" name="outdate" placeholder="Check Out"> </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="flex flex-column rooms-fieldset">
+                        <div class="flex width-100">
+                            <div class="flex flex-column">
+                                <label for="rooms">How many rooms?</label>
+                                <select class="align-self-start" name="rooms" id="rooms">
+                                    <option value="one room">1 Room</option>
+                                    <option value="double room">2 Room</option>
+                                    <option value="triple room">3 Room</option>
+                                </select>
+                            </div>
+
+                            <div class="flex flex-column">
+                                <label for="adult">Adult</label>
+                                <select class="align-self-start" name="adults" id="adult">
+                                    <option value="one">1</option>
+                                    <option value="two">2</option>
+                                    <option value="three">3</option>
+                                    <option value="four">4</option>
+                                    <option value="five">5</option>
+                                </select>
+                            </div>
+
+                            <div class="flex flex-column">
+                                <label for="children">Children</label>
+                                <select class="align-self-start" name="children" id="children">
+                                    <option value="one">0</option>
+                                    <option value="one">1</option>
+                                    <option value="two">2</option>
+                                    <option value="three">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input class="btn btn-skyblue width-100" type="button" name="available"
+                            value="CHECK AVAILABILITY">
+
+                    </fieldset>
+                </form>
+
+
+
+            </section>
+
+            <section id="main-content" class="your-journey">
+                <h2>YOUR <strong>JOURNEY</strong> IS OUR PRIORITY</h2>
+                <P>Nullam auctor,sapien sit amet lacinia euismod, lorem mangna lobortis massa quis lectus. Duis nec
+                    lobortis
+                    velit. Vivamus id magna vulputate, tampor augue. Maecenas ultricies neque magna.</P>
+                <a class="btn btn-skyblue" href="#">CONTINUE EXPLORE</a>
+            </section>
+
+            <section>
+                <article class="places flex">
+                    <div class="places-image"> <img src="./assets/media/img/tm-img-01.jpg" alt="image"></div>
+                    <div class="flex-50 places-content">
+                        <h2>Europe's most visited places</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quasi accusantium
+                            laborum eius corporis nulla debitis repudiandae obcaecati, placeat vitae vel, nesciunt
+                            dolorem eos fuga nam unde quia officia sit.</p>
+                        <a class="btn btn-skyblue-text" href="#">CONTINUE READING</a>
+                    </div>
+                </article>
+
+                <article class="places flex flex-justify-end">
+                    <div class="flex-50 places-content voilet-content">
+                        <h2>Asia's most popular places</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quasi accusantium
+                            laborum eius corporis nulla debitis repudiandae obcaecati, placeat vitae vel, nesciunt
+                            dolorem eos fuga nam unde quia officia sit.</p>
+                        <a class="btn btn-voilet" href="#">CONTINUE READING</a>
+                    </div>
+                    <div class="places-image"> <img src="./assets/media/img/tm-img-02.jpg" alt="image"></div>
+
+                </article>
+
+                <article class="places flex ">
+                    <div class="places-image"> <img src="./assets/media/img/tm-img-03.jpg" alt="image"></div>
+                    <div class="flex-50 places-content">
+                        <h2>America's most famous places</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quasi accusantium
+                            laborum eius corporis nulla debitis repudiandae obcaecati, placeat vitae vel, nesciunt
+                            dolorem eos fuga nam unde quia officia sit.</p>
+                        <a class="btn btn-skyblue-text" href="#">CONTINUE READING</a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="bg-color flex flex-align-center continents-map-con">
+                <div class="continents-map flex flex-column"><img src="./assets/media/img/north-america.png"
+                        alt="North America"><span>NORTH AMERICA</span></div>
+                <div class="continents-map flex flex-column"><img src="./assets/media/img/south-america.png"
+                        alt="SOUTH AMERICA"><span>SOUTH AMERICA</span></div>
+                <div class="continents-map flex flex-column"><img src="./assets/media/img/europe.png"
+                        alt="EUROPE"><span>EUROPE</span></div>
+                <div class="continents-map flex flex-column voilet"><img src="./assets/media/img/asia.png"
+                        alt="ASIA"><span>ASIA</span></div>
+                <div class="continents-map flex flex-column"><img src="./assets/media/img/africa.png"
+                        alt="AFRICA"><span>AFRICA</span></div>
+                <div class="continents-map flex flex-column"><img src="./assets/media/img/australia.png"
+                        alt="AUSTRILIA"><span>AUSTRILIA</span></div>
+                <div class="continents-map flex flex-column "><img src="./assets/media/img/antartica.png"
+                        alt="ANTARTICA"><span>ANTARTICA</span></div>
+            </section>
+
+            <section class="container hotels bg-color-white">
+                <article class="flex">
+                    <img src="./assets/media/img/tm-img-06.jpg" alt="image">
+                    <div class="text-left align-self-start hotels-content">
+                        <h4>ASIA RESORT HOTEL</h4>
+                        <SMAll>Singapore</SMAll>
+                        <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit
+                            amet lectus Donec blandit luctus dictum</p>
+
+                    </div>
+                    <div class="price-tag bg-color"></div>
+                </article>
+
+                <article class="flex">
+                    <img src="./assets/media/img/tm-img-07.jpg" alt="image">
+                    <div class="text-left align-self-start hotels-content">
+                        <h4>NULLAM EGET EST A NISL</h4>
+                        <SMAll>Yangon, Myanmar</SMAll>
+                        <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit
+                            amet lectus Donec blandit luctus dictum</p>
+
+                    </div>
+                    <div class="price-tag bg-color"></div>
+                </article>
+
+                <article class="flex">
+                    <img src="./assets/media/img/tm-img-05.jpg" alt="image">
+                    <div class="text-left align-self-start hotels-content">
+                        <h4>PROIN INTERDUM ULLAMCORPER</h4>
+                        <SMAll>Bangkok,Thailand</SMAll>
+                        <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit
+                            amet lectus Donec blandit luctus dictum</p>
+
+                    </div>
+                    <div class="price-tag bg-color"></div>
+                </article>
+
+                <article class="flex">
+                    <img src="./assets/media/img/tm-img-04.jpg" alt="image">
+                    <div class="text-left align-self-start hotels-content">
+                        <h4>LOREM IPSUM DOLOR SIT</h4>
+                        <SMAll>Vientiane,Laos</SMAll>
+                        <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit
+                            amet lectus Donec blandit luctus dictum</p>
+
+                    </div>
+                    <div class="price-tag bg-color"></div>
+                </article>
+                <a class="btn btn-skyblue" href="#">SHOW MORE PLACES</a>
+            </section>
+            <section class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.8879797169643!2d76.35319631276974!3d32.2072490201296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1631861926623!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <form class="massage-form" action="">
+                    <fieldset>
+                        <div class="flex">
+                        <input class="width-100 flex-48" type="text" name="username" placeholder="Name">
+                        <input class="width-100 flex-48" type="email" name="email" placeholder="Email">
+                        </div>
+                        <input class="width-100" type="text" name="subject" placeholder="Subject">
+                        <textarea class="width-100" name="masssage" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <input class="btn btn-skyblue width-100" type="button" name="available"
+                        value="CHECK AVAILABILITY">
+                        
+
+
+                    </fieldset>
+                </form>
+            </section>
+
+        </section>
+        
+
+    </main>
+    <footer class="primary-container bg-color">
+        <small>Copyright &copy 2020 Your Company . Designed by Template Mo</small>
+    </footer>
+
+
+</body>
+
+</html>
