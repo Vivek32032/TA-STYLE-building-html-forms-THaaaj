@@ -1,0 +1,466 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* custom style */
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary: rgb(105,198,186);
+    --secondary: rgb(239,239,239);
+    --tertiary: rgb(198,105,149);
+    --shadow-color: rgb(217,217,217);
+    --text-color: rgb(129, 129, 129);
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1.5;
+    /* font-family: 'Roboto', sans-serif; */
+    text-align: center;
+
+}
+main {
+    background-color: rgb(230,230,230);
+}
+
+a {
+    text-decoration: none;
+}
+.primary-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.container {
+    padding: 0 15%;
+}
+/*--------- flex-------- */
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: space-between;
+    align-items: center;
+}
+.justify-space-berween {
+    justify-content: space-between;
+}
+.flex-justify-end {
+    justify-content: flex-end;
+}
+
+.flex-align-start {
+    align-items: start;
+}
+.flex-justify-start {
+    justify-content: start;
+}
+.flex-align-center {
+    align-items: center;
+
+}
+.flex-justify-center {
+    justify-content: center;
+}
+.align-self-start {
+    align-self: flex-start;
+}
+.align-item-start {
+    align-content: flex-start;
+}
+.flex-55 {
+    flex: 0 1 55%;
+}
+.flex-40 {
+    flex: 0 1 40;
+}
+.flex-48 {
+    flex: 0 1 48;
+}
+.flex-50 {
+    flex: 0 1 50%;
+}
+
+
+/*-------- header------ */
+
+header {
+    padding: 30px 9%;
+
+     
+}
+h1 {
+    font-size: 37px;
+    font-weight: 600;
+}
+p {
+    font-size: 12px;
+}
+header nav a {
+    font-size: 13px;
+    color: black;
+    font-weight: 700;
+}
+/* buttons */
+.btn {
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+}
+
+.btn-skyblue {
+    background-color: var(--primary) !important;
+    color: white;
+
+}
+.btn-skyblue-text {
+    background-color: white;
+    color: var(--primary);
+    font-weight: 400;
+    
+
+
+}
+
+.btn-voilet{
+    background-color: white;
+    color: var(--tertiary);
+    font-weight: 400;
+ 
+}
+fieldset {
+    height: 100%;
+}
+.width-100 {
+    width: 100%;
+}
+.bg-color-white {
+    background-color: white;
+}
+.bg-color {
+    background-color: var(--primary);
+}
+.text-left {
+    text-align: left;
+}
+/* ------hero-section -----------*/
+.hero {
+    color: white;
+    width: 100%;
+    height: 750px;
+    background-size: cover;
+    padding: 6.5% 20%;
+    background-image:linear-gradient(to right, rgba(0, 0, 0,0.6),rgba(0, 0, 0, 0.600)), url("../media/img/banner.jpg");
+}
+.hero h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+.small-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+}
+.dot-container {
+    width: 20px;
+    height: 38px;
+}
+.center-dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+h4 {
+    font-size: 23px;
+    font-weight: 400;
+}
+.hero form {
+    background-color: white;
+    padding: 20px 28px;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    height: 200px;
+    text-align: left;
+    width: 100%;
+
+}
+form::placeholder {
+    color: var(--text-color);
+}
+
+.go-down {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    margin-bottom: 100px;
+}
+.hero a{
+    color: white;
+}
+.destination-fieldset {
+    max-width: 40%
+}
+.rooms-fieldset {
+    min-width: 50%;
+}
+
+/* your journey is our priority */
+
+.your-journey {
+    padding: 4% 20%;
+    background-color: rgb(239,239,239);
+    
+}
+h2 {
+    font-size: 32px;
+    /* margin-bottom: 16px; */
+}
+.your-journey strong {
+    font-weight: 600;
+}
+.your-journey p {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* most-visited places */
+
+.places {
+    position: relative;
+    background-color: white;
+    
+}
+.places-article {
+    justify-items: flex-end;
+}
+.places-image{
+    width: 50%;
+    height: 500px;
+    
+}
+.places-image img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.places-content{
+    background-color: var(--primary);
+    padding: 3% ;
+    position: absolute;
+    width: 48%;
+    left: 47%;
+    top: 25%;
+    text-align: left;
+    color: white;
+}
+
+.places-content p{
+      margin-top: 5px;
+      margin-bottom: 28px;
+}
+
+
+.voilet-content {
+    left: 5%;
+    top: 25%;
+    background-color: var(--tertiary);
+
+
+}
+.bg-color {
+    background-color: var(--primary);
+}
+.voilet {
+    background-color: var(--tertiary);
+}
+.continents-map {
+    padding: 2% 3%;
+    color: white;
+    font-weight: 500;
+}
+
+
+/* hotels */
+.hotels {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+.hotels article {
+    margin-bottom: 2.5%;
+    /* border: 1px solid rgb(235, 235, 235); */
+    position: relative;
+
+}
+.hotels-content {
+  width: 47%;
+  box-sizing: content-box;
+   position: absolute;
+   border-radius: 0  90px 90px 0/0 150px 150px 0 ;
+   background-color: rgb(255, 255, 255);
+   left: 27.7%;
+   padding: 0 30px; 
+   height: 100%;
+   padding-right: 90px;
+   box-shadow: inset -5px 0 8px 1px rgba(218, 218, 218, 0.755);
+}
+
+.hotels p{
+color: var(--text-color);
+margin-top: 10px;
+}
+.hotels h4{
+font-weight: 500;
+font-size: 22px;  
+margin-top: 10px;
+}
+
+.price-tag {
+    min-width: 180px;
+    height: 180px;
+    background-color: var(--primary);
+    /* border-radius: 60px 0 0 50%/5px 20px 20px 20px ; */
+}
+
+
+.hotels .text-left small{
+color: var(--tertiary);
+font-size: 12px;
+font-weight: 600;
+}
+
+/* map */
+.map {
+    font-size: 0;
+    position: relative;
+}
+iframe {
+    width: 100%;
+    height: 600px;
+    
+}
+footer {
+    padding: 3.7%;
+}
+footer small {
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* massage form */
+
+.massage-form {
+    width: 450px;
+    position: absolute;
+    padding: 15px 20px;
+    background-color: white;
+    right: 8%;
+    bottom: 100px;
+
+}
+input,select {
+    border: none;
+    outline: none;
+    background-color: white;
+    width: 100%;
+
+}
+
+.massage-form input{
+    margin: 10px 0;
+    padding: 15px;
+    background-color: rgb(240,240,240);
+}
+.massage-form textarea{
+    margin: 10px 0;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(241, 240, 240);
+
+    
+}
+
+
+.active {
+    color: var(--primary);
+}
+a:hover {
+    color: var(--primary);
+
+}
+.btn:hover {
+    background-color: rgb(192, 105, 151) !important;
+    color: snow;
+}
+.go-down:hover{
+    background-color: teal;
+}
+
+
